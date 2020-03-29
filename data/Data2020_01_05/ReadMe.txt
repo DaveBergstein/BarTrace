@@ -1,0 +1,1 @@
+Taken by Dave Bergstein of Dave Bergstein and Randy Triunfel on an iPhone 11 on Dec 27th, 2019 at Grit City, Bronx New York. Permission to use data in the context of BarTrace. Contact Dave Bergstein for details. DBergstein@gmail.com The weights used are: 75 135 165 185 205 225 255 275 295 315 325 335 335 respectively in pounds.
