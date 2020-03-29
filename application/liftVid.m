@@ -127,7 +127,7 @@ classdef liftVid < handle
                     d = load("trainedWithTrainingB.mat");
                     detectByDeepLearning(obj, d);
                 case "modelC"
-                    d = load("trainedWithTrainingB.mat");
+                    d = load("trainedWithTrainingC.mat");
                     detectByDeepLearning(obj, d);
                 otherwise
                     obj = findByImgProcessingA(obj, plateRadius);
