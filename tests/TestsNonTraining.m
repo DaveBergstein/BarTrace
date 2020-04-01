@@ -25,9 +25,9 @@ assert(vid.centers(25,2) < 700)
 close all
 
 %% Test4
-disp("Find plate with model C")
+disp("Find plate with model B")
 vid = liftVid("RandyShort.mp4");
-vid.tracePlate("modelC")
+vid.tracePlate("modelB")
 % Check the position
 assert(vid.centers(25,1) > 325)
 assert(vid.centers(25,1) < 375)
@@ -39,7 +39,7 @@ close all
 disp("check that result is saved")
 delete("result1.mp4");
 vid = liftVid("RandyShort.mp4");
-vid.tracePlate("modelC")
+vid.tracePlate("modelB")
 vid.annotate;
 vid.save("result1")
 % Check that files were created

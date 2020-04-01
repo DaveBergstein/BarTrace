@@ -1,4 +1,4 @@
-classdef liftVid < handle
+classdef liftVid_working < handle
     %liftVid Read and analyze a weightlifting video.
     %   vid = liftVid("file.mp4"); 
     %
@@ -119,11 +119,15 @@ classdef liftVid < handle
             %tracePlace Traces the plate in the video.
             %   tracePlate(obj, ModelName) where ModelName is:
             %   "modelA":   Based on image processing
-            %   "modelB":   CNN based on resnet18 + YOLO
+            %   "modelB":   CNN based on resnet50 + YOLO
+            %   "modelC":   CNN based on resnet18 + YOLO
             obj.loadVideo;
             switch modelName
                 case "modelB"   % refactor model prep into another method)
                     d = load("trainedWithTrainingB.mat");
+                    detectByDeepLearning(obj, d);
+                case "modelC"
+                    d = load("trainedWithTrainingC.mat");
                     detectByDeepLearning(obj, d);
                 otherwise
                     obj = findByImgProcessingA(obj, plateRadius);
