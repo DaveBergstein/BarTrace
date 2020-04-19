@@ -95,7 +95,6 @@ classdef liftVid < handle
                     writeVideo(v,frame);
                 end
             end
-            disp("no more frames")
             if saveit
                 close(v)
             end
