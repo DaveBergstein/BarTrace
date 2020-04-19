@@ -1,4 +1,4 @@
-classdef liftVid_working < handle
+classdef liftVid_old < handle
     %liftVid Read and analyze a weightlifting video.
     %   vid = liftVid("file.mp4"); 
     %
@@ -130,7 +130,7 @@ classdef liftVid_working < handle
                     d = load("trainedWithTrainingC.mat");
                     detectByDeepLearning(obj, d);
                 otherwise
-                    obj = findByImgProcessingA(obj, plateRadius);
+                    obj = findByImgProcessing(obj, plateRadius);
             end
         end
         
