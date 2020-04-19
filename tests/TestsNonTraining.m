@@ -13,13 +13,13 @@ assert(vid.frameSize(2) == 720)
 close all
 
 %% Test3
-disp("check Randy Short position")
-vid = liftVid("RandyShort.mp4");
+disp("check Dave Short position")
+vid = liftVid("DaveShort.mp4");
 vid.tracePlate(false, false, "none")
-assert(vid.pos(25,1) > 325)
-assert(vid.pos(25,1) < 375)
-assert(vid.pos(25,2) > 650)
-assert(vid.pos(25,2) < 700)
+assert(vid.pos(30,1) > 350)
+assert(vid.pos(30,1) < 400)
+assert(vid.pos(30,2) > 750)
+assert(vid.pos(30,2) < 800)
 close all
 
 %% Test4
