@@ -27,11 +27,11 @@ if nargin == 2
 end
 
 %% Process frame by frame
-while isa(vid.vid,"VideoReader") && hasFrame(vid.vid)
+while isa(vid.vObj,"VideoReader") && hasFrame(vid.vObj)
     
     % read frame
     vid.numFrames = vid.numFrames + 1;
-    img = readFrame(vid.vid);
+    img = readFrame(vid.vObj);
     k = vid.numFrames;
     
     % get radius if not already defined

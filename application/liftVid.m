@@ -5,7 +5,7 @@ classdef liftVid < handle
     % This is the main class definition for running BarTrace.
     
     properties
-        vid = 0;                % video object
+        vObj = 0;               % video object
         frameSize = [0 0]       % frame size
         numFrames = 0;          % number of frames
         radius = 0;             % avg radius of the plate in pixels    
@@ -23,17 +23,17 @@ classdef liftVid < handle
             elseif nargin > 1
                 error('Expected 0 or 1 inputs');
             end
-            obj.vid = VideoReader(fileName);
-            obj.frameSize = [obj.vid.Height obj.vid.Width];
+            obj.vObj = VideoReader(fileName);
+            obj.frameSize = [obj.vObj.Height obj.vObj.Width];
         end
         
         function frame = processNextFrame(obj)
             %processNextFrame
-            if isa(obj.vid,"VideoReader") && hasFrame(obj.vid)
+            if isa(obj.vObj,"VideoReader") && hasFrame(obj.vObj)
                 
                 % read frame
                 obj.numFrames = obj.numFrames + 1;
-                cdata = readFrame(obj.vid);
+                cdata = readFrame(obj.vObj);
                 
                 % find plate
                 trainedSize = obj.model.detector.TrainingImageSize;
@@ -71,7 +71,7 @@ classdef liftVid < handle
             %   tracePlate(obj,playit,saveit)
             %   playit = true will play the video
             %   saveit = true will save the video
-            if isa(obj.vid,"VideoReader") && hasFrame(obj.vid)
+            if isa(obj.vObj,"VideoReader") && hasFrame(obj.vObj)
                 if playit
                     figure;
                     f = gca;
@@ -85,7 +85,7 @@ classdef liftVid < handle
                 playit = false;
                 saveit = false;
             end
-            while hasFrame(obj.vid)
+            while hasFrame(obj.vObj)
                 frame = obj.processNextFrame;
                 if playit
                     imshow(frame, 'Parent', f);
