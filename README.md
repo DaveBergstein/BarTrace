@@ -4,8 +4,7 @@ Application to track the path and speed of a barbell when weightlifting.
 
 Started by Dave Bergstein (dbergstein@gmail.com)
 
-I'm learning to weightlift and find it helpful to see the path and speed of the barbell of my lifts. I also enjoy playing with deep learning. I train at Grit City in the Bronx, NYC (@concretejunglegritsc on Instagram). Randy Triunfel (@thebarbellmasochist on Instagram) is a competitive weightlifter and my coach. Randy is a great lifter and I learn a lot from seeing his lifts as well.
-Pull Requests are welcomed. And feel free to fork and use consistent with the MIT license. I didn't include all the video data here given it's size. The video data was all taken at the gym (pre-pandemic) with either Randy or me, so the model wasn't trained with much variety.
+I'm learning to weightlift and find it helpful to see the path and speed of the barbell of my lifts. I also like experimenting with deep learning. Videos were taken at Grit City in the Bronx where I train (IG @concretejunglegritsc). Randy Triunfel (IG @thebarbellmasochist) is a competitive weightlifter and my coach. Pull Requests welcomed. Feel free to fork and use. I didn't include all the video data here given it's size. The videos were all taken at the gym (pre-pandemic) with either Randy or me, so the model wasn't trained with much variety.
 
 See StartHere.mlx for details and getting started
 
