@@ -9,3 +9,11 @@ I'm learning to weightlift and find it helpful to see the path and speed of the 
 See StartHere.mlx for details and getting started
 
 [![View BarTrace on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/75105-bartrace)
+
+### Project Organization
+- application: production code including production model
+- data: raw data, see readme files for credit & permission
+- models: image processing and trained models
+- training: code for training models
+- exploring: area to explore
+- tests: tests (currently excludes any training-related tests)
