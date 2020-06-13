@@ -11,4 +11,11 @@ workflows:
   welcome:
     # Run the welcome/run job in its own container
     jobs:
-      - welcome/run
+      build:
+        machine:
+          image: 'ubuntu-1604:201903-01'
+        steps:
+          - checkout
+          - matlab/install
+          - matlab/run-command:
+            command: myscript
