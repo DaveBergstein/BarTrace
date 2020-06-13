@@ -49,6 +49,10 @@ classdef liftVid < handle
                     position = [(x+w/2) (y+h/2) ((w+h)/4)]; %[x y r]
                     obj.pos(obj.numFrames,1:3) = position; % store position
                     obj.radius = median(obj.pos(1:obj.numFrames,3)); % median of all past radii
+                else
+                    % plate wasn't found
+                    position = [1 1 10];
+                    obj.pos(obj.numFrames,1:3) = position; % store position
                 end
                 
                 % annotate
