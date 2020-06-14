@@ -1,2 +1,2 @@
 proj = openProject("BarTrace.prj")
-runtests
+runtests("TestsNonTraining.m")
