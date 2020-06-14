@@ -10,6 +10,10 @@ See StartHere.mlx for details and getting started. [![View BarTrace on File Exch
 
 [![CircleCI](https://img.shields.io/circleci/build/github/DaveBergstein/BarTrace)](https://app.circleci.com/pipelines/github/DaveBergstein/BarTrace)
 
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
+
+[![ORG_NAME](https://circleci.com/github/DaveBergstein/BarTrace.svg?style=svg)](https://app.circleci.com/pipelines/github/DaveBergstein/BarTrace)
+
 ### Project Organization
 - application: production code including production model
 - data: raw data, see readme files for credit & permission
