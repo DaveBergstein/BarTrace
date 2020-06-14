@@ -4,7 +4,11 @@ Application to track the path and speed of a barbell when weightlifting.
 
 Started by Dave Bergstein (dbergstein@gmail.com)
 
-I'm learning to weightlift and find it helpful to see the path and speed of the barbell of my lifts. I also like experimenting with deep learning. Videos were taken at Grit City in the Bronx where I train (IG @concretejunglegritsc). Randy Triunfel (IG @thebarbellmasochist) is a competitive weightlifter and my coach. Pull Requests welcomed. Feel free to fork and use. I didn't include all the video data here given it's size. The videos were all taken at the gym (pre-pandemic) with either Randy or me, so the model wasn't trained with much variety.
+I'm learning to weightlift and find it helpful to see the path and speed of the barbell of my lifts. I also like playing with deep learning. Videos were taken at Grit City in the Bronx where I train (IG @concretejunglegritsc). Randy Triunfel (IG @thebarbellmasochist) is a competitive weightlifter and my coach. 
+
+I first find the weight plate in the training videos using image processing with imfindcirle. My image processing routine often  fails to find the plate and is slow. Nonetheless, the image processing routine was able to label most the training data correctly. I then used this labeled data to train a CNN with the final layers replaced by a YOLO network. The resulting neural network is more accurate and much faster than the image processing I used to label the data. Important caveat: the videos were all taken at the same gym (pre-pandemic) with either Randy or me, so there is very little training variety.
+
+Pull Requests welcomed. Feel free to fork and use. I didn't include all the video data here given it's size. 
 
 View StartHere.mlx on File Exchange:
 
