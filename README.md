@@ -18,7 +18,7 @@ View StartHere.mlx on File Exchange:
 
 ### Project Organization
 - application: production code including production model
-- data: raw data, see readme files for credit & permission
+- data: raw data, see readme files for credit & permission (most data excluded here given it's size)
 - models: image processing and trained models
 - training: code for training models
 - exploring: area to explore
