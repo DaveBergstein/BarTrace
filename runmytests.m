@@ -1,1 +1,2 @@
-runtests("BarTrace")
+proj = openProject("BarTrace.prj")
+runtests
