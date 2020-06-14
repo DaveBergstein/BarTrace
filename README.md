@@ -10,7 +10,7 @@ See StartHere.mlx for details and getting started. [![View BarTrace on File Exch
 
 [![CircleCI](https://circleci.com/github/DaveBergstein/BarTrace.svg?style=shield)](https://img.shields.io/circleci/build/github/DaveBergstein/BarTrace/master)
 
-[![Trying Badge Again](https://img.shields.io/circleci/build/github/DaveBergstein/BarTrace/master)](https://img.shields.io/circleci/build/github/DaveBergstein/BarTrace/master)
+[![Trying Badge Again](https://img.shields.io/circleci/build/github/DaveBergstein/BarTrace)](https://app.circleci.com/pipelines/github/DaveBergstein/BarTrace)
 
 ### Project Organization
 - application: production code including production model
