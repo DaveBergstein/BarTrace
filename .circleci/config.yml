@@ -6,7 +6,7 @@ jobs:
       - checkout
       - matlab/install
       - matlab/run-command:
-          command: myscript
+          command: runtests
 orbs:
   matlab: mathworks/matlab@0.1.1
 version: 2.1
