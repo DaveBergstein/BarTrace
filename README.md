@@ -8,11 +8,7 @@ I'm learning to weightlift and find it helpful to see the path and speed of the 
 
 See StartHere.mlx for details and getting started. [![View BarTrace on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/75105-bartrace)
 
-[![CircleCI](https://img.shields.io/circleci/CircleCI/github/DaveBergstein/BarTrace)](https://app.circleci.com/pipelines/github/DaveBergstein/BarTrace)
-
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
-
-[![ORG_NAME](https://circleci.com/gh/DaveBergstein/BarTrace.svg?style=svg)](https://app.circleci.com/pipelines/github/DaveBergstein/BarTrace)
+[![DaveBergstein](https://circleci.com/gh/DaveBergstein/BarTrace.svg?style=shield)](https://app.circleci.com/pipelines/github/DaveBergstein/BarTrace)
 
 ### Project Organization
 - application: production code including production model
