@@ -50,6 +50,13 @@ assert(centers(25,2) > 650)
 assert(centers(25,2) < 700)
 close all
 
+%% Test 7a
+disp("test that fails to check testing")
+x = 1;
+y = 2;
+assert(x == y)
+close all
+
 %% Test6
 disp("Check analysis script")
 %Analyze2ndPull
