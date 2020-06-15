@@ -3,7 +3,7 @@ jobs:
     machine:
       image: 'ubuntu-1604:201903-01'
     steps:
-      - run: sudo apt-get update && sudo apt-get install -y libgstreamer1.0-0<command>
+      - run: 'sudo apt-get update && sudo apt-get install -y libgstreamer1.0-0'
     steps:
       - checkout
       - matlab/install
