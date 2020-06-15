@@ -5,8 +5,11 @@ jobs:
     steps:
       - checkout
       - matlab/install
-      - matlab/run-command:
-          command: runmytests
+      - matlab/run-tests:
+          test-results-junit: test-results/matlab/results.xml
+      - store_test_results:
+          path: test-results
+
 orbs:
   matlab: mathworks/matlab@0.1.1
 version: 2.1
