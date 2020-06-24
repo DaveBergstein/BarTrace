@@ -41,6 +41,11 @@ vid.tracePlate(false, true, "result1.avi")
 assert(exist("result1.avi", "file") == 2)
 close all
 
+%% Test6
+disp("Check analysis script")
+%Analyze2ndPull
+close all
+
 %% Test7
 disp("Check image processing algorithm")
 centers = findByImgProcessing("RandyShort.mp4", 109);
@@ -51,13 +56,8 @@ assert(centers(25,2) < 700)
 close all
 
 %% Test 7a
-disp("test that fails to check testing")
+disp("test to check testing")
 x = 1;
-y = 2;
+y = 1;
 assert(x == y)
-close all
-
-%% Test6
-disp("Check analysis script")
-%Analyze2ndPull
 close all
