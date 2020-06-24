@@ -34,16 +34,16 @@ close all
 
 %% Test5
 disp("check that result is saved")
-delete("result1.mp4");
+delete("result1.avi");
 vid = liftVid("RandyShort.mp4");
-vid.tracePlate(false, true, "result1.mp4")
+vid.tracePlate(false, true, "result1.avi")
 % Check that files were created
-assert(exist("result1.mp4", "file") == 2)
+assert(exist("result1.avi", "file") == 2)
 close all
 
 %% Test7
 disp("Check image processing algorithm")
-centers = findByImgProcessing("RandyShort.mp4", 109)
+centers = findByImgProcessing("RandyShort.mp4", 109);
 assert(centers(25,1) > 325)
 assert(centers(25,1) < 375)
 assert(centers(25,2) > 650)

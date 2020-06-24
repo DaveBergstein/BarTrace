@@ -81,7 +81,7 @@ classdef liftVid < handle
                     f = gca;
                 end
                 if saveit
-                    v = VideoWriter(saveName,"MPEG-4");
+                    v = VideoWriter(saveName);
                     open(v);
                 end
             else
