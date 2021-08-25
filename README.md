@@ -4,7 +4,7 @@ Application to track the path and speed of a barbell when weightlifting.
 
 Started by Dave Bergstein (dbergstein@gmail.com)
 
-View StartHere.mlx on File Exchange: [![View BarTrace on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/75105-bartrace)
+View Examples/StartHere.mlx on File Exchange:  [![View BarTrace on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/75105-bartrace)
 
 I'm learning to weightlift and find it helpful to see the path and speed of the barbell of my lifts. I also like playing with deep learning. Videos were taken at Grit City in the Bronx where I train (IG @concretejunglegritsc). Randy Triunfel (IG @thebarbellmasochist) is a competitive weightlifter and my coach. 
 
